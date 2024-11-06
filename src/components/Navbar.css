@@ -1,0 +1,70 @@
+/* Navbar.css */
+.menuButton,
+.searchWrapper,
+.faceMenuItem,
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    flex-grow: 1;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.menuButton {
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.menuItem {
+    font-size: 14px;
+    color: #fff;
+}
+
+.searchWrapper {
+    position: relative;
+    border-radius: 4px;
+    background-color: white;
+    margin-left: 0;
+    width: 100%;
+    display: none;
+}
+
+.searchWrapper.show {
+    display: block;
+}
+
+.searchIconWrapper {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input {
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.faceMenuItem {
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    /* Smooth transition for hover effects */
+}
+
+.faceMenuItem:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    /* Slightly increases size on hover */
+    font-size: calc(100% + 1px);
+    font-weight: bold;
+}
+
+.appBar {
+    background-color: #440025;
+}
