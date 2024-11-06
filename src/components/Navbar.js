@@ -1,6 +1,6 @@
 // Navbar.js
 import React, { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Button, Menu, MenuItem, Box, Grow } from '@mui/material';
 import { Search as SearchIcon, ShoppingCart as ShoppingCartIcon, AccountCircle, KeyboardArrowUp, KeyboardArrowDown } from '@mui/icons-material';
 import './Navbar.css'; // Import the CSS file
 import logo from '../imgs/logo.png';
@@ -87,31 +87,39 @@ const Navbar = () => {
                 </Menu>
 
                 <Menu anchorEl={faceMenuAnchorEl} open={openFaceSubMenu} onClose={handleClose}>
-                    <Box display="flex" p={1}>
-                        {/* Render menu item columns */}
-                        {Object.values(faceSubmenuItems.options).map((col, index) => (
-                            <Box key={`col-${index}`} width="15%" p={1}>
-                                {col.map((item) => (
-                                    <MenuItem key={item} className="faceMenuItem">
-                                        {item}
-                                    </MenuItem>
-                                ))}
-                            </Box>
-                        ))}
-
-                        {/* Render images with descriptions and links */}
-                        {faceSubmenuItems.images.map((img, index) => (
-                            <Box key={`img-${index}`} width="25%" p={1} sx={{ textAlign: 'center' }}>
-                                <img src={img.src} alt={img.description} width="400" height="250" />
-                                <Typography variant="body2" sx={{ mt: 1, textAlign: 'center' }}>
-                                    {img.description}
-                                </Typography>
-                                <Button variant="contained" size="small" href={img.link} sx={{ mt: 1 }}>
-                                    Shop
-                                </Button>
-                            </Box>
-                        ))}
-                    </Box>
+                    <Grow in={openFaceSubMenu} timeout={500}>
+                        <Box display="flex" p={1}>
+                            {/* Render menu item columns with animation */}
+                            {Object.values(faceSubmenuItems.options).map((col, colIndex) => (
+                                <Box key={`col-${colIndex}`} width="15%" p={1}>
+                                    {col.map((item, index) => (
+                                        <Grow
+                                            in={openFaceSubMenu} // Controls the animation visibility
+                                            style={{ transformOrigin: '0 0 0' }}
+                                            {...(openFaceSubMenu ? { timeout: 200 * index } : {})} // Delay each item
+                                            key={item}
+                                        >
+                                            <MenuItem className="faceMenuItem">
+                                                {item}
+                                            </MenuItem>
+                                        </Grow>
+                                    ))}
+                                </Box>
+                            ))}
+                            {/* Render images with descriptions and links */}
+                            {faceSubmenuItems.images.map((img, index) => (
+                                <Box key={`img-${index}`} width="25%" p={1} sx={{ textAlign: 'center' }}>
+                                    <img src={img.src} alt={img.description} width="400" height="250" />
+                                    <Typography variant="body2" sx={{ mt: 1, textAlign: 'center' }}>
+                                        {img.description}
+                                    </Typography>
+                                    <Button variant="contained" size="small" href={img.link} sx={{ mt: 1 }}>
+                                        Shop
+                                    </Button>
+                                </Box>
+                            ))}
+                        </Box>
+                    </Grow>
                 </Menu>
 
             </Toolbar>
