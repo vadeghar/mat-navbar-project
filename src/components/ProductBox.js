@@ -109,7 +109,7 @@ const ProductBox = ({ product }) => {
                 <Typography variant="h6" sx={{ marginTop: '5px', fontWeight: 'bold', fontSize: '14px' }}>
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '5px', fontSize: '12px' }}>
+                <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '5px', fontSize: '12px', fontWeight: '600' }}>
                     {shortDescription}
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4px', marginBottom: '8px' }}>

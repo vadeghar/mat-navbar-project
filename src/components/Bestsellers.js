@@ -143,15 +143,38 @@ const sampleProducts = [
     }
 ];
 return (
-    <Box sx={{ display: 'flex', 
-    flexWrap: 'wrap', 
-    flexDirection: 'row', 
-    gap: '10px',
-    width: '95%' }}>
-        {sampleProducts.map((product, index) => (
-            <ProductBox key={index} product={product} />
-        ))}
-    </Box>
+    <Box sx={{ width: '95%', margin: '0 auto' }}>
+            {/* Bestsellers Ribbon Heading */}
+            <Box sx={{
+                display: 'flex',
+                alignItems: 'end',
+                backgroundColor: '#faf2f5', 
+                color: '#261e21',
+                padding: '8px',
+                borderRadius: '0px',
+                fontWeight: 'bold',
+                position: 'relative',
+                width: '98%',
+                height: '2vw',
+                borderBottom: '1px #261e21 solid'
+            }}>
+                Bestsellers
+            </Box>
+            
+            {/* Product Grid */}
+            <Box sx={{ 
+                display: 'flex', 
+                flexWrap: 'wrap', 
+                flexDirection: 'row', 
+                gap: '10px',
+                width: '100%',
+                marginTop: '10px' // Add margin-top to space it from the ribbon
+            }}>
+                {sampleProducts.map((product, index) => (
+                    <ProductBox key={index} product={product} />
+                ))}
+            </Box>
+        </Box>
 );
 
 }

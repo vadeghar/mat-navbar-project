@@ -3,9 +3,19 @@ import Navbar from './components/Navbar'; // assuming you separated Navbar as a 
 import Carousels from './components/Carousels';
 import { Box } from '@mui/material';
 import Bestsellers from './components/Bestsellers';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Montserrat, Arial, sans-serif', // Default font family
+  },
+});
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
     <Box
       sx={{
         minHeight: '100vh', // Make sure it covers full viewport height
@@ -23,7 +33,7 @@ function App() {
       </Box>
 
     </Box>
-
+    </ThemeProvider>
   );
 }
 
