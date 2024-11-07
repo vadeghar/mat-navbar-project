@@ -1,5 +1,5 @@
 const NavbarTheme = {
-  primaryColor: '##faf2f5', // Soft Pink
+  primaryColor: '#faf2f5', // Soft Pink
   secondaryColor: '#F5F5DC', // Neutral Beige
   accentColor: '#660066', 
   
