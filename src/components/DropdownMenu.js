@@ -7,16 +7,16 @@ const DropdownMenu = ({ anchorEl, open, handleClose, items, images }) => (
         <Grow in={open} timeout={500}>
             <Box display="flex" p={1}>
                 {Object.values(items).map((col, colIndex) => (
-                    <Box key={`col-${colIndex}`} width="15%" p={1}>
+                    <Box key={`col-${colIndex}`} p={1}>
                         {col.map((item, index) => (
                             <Grow in={open} key={item} timeout={200 * index}>
-                                <MenuItem>{item}</MenuItem>
+                                <MenuItem className='faceMenuItem'>{item}</MenuItem>
                             </Grow>
                         ))}
                     </Box>
                 ))}
                 {images.map((img, index) => (
-                    <Box key={`img-${index}`} width="25%" p={1} sx={{ textAlign: 'center' }}>
+                    <Box key={`img-${index}`}  p={1} sx={{ textAlign: 'center' }}>
                         <img src={img.src} alt={img.description} width="400" height="250" />
                         <Typography variant="body2">{img.description}</Typography>
                         <Button variant="contained" size="small" href={img.link}>Shop</Button>

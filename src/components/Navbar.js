@@ -6,6 +6,7 @@ import './Navbar.css'; // Import the CSS file
 import DropdownMenu from './DropdownMenu';
 import logo from '../imgs/logo.png';
 import menuData from './MenuData';
+import theme from '../themes/NavbarTheme';
 
 const Navbar = () => {
     const [accountMenuAnchor, setAccountMenuAnchor] = useState(null);
@@ -27,15 +28,19 @@ const Navbar = () => {
         setAccountMenuAnchor(event.currentTarget);
     };
     const handleClose = () => {
+        setAccountMenuAnchor(null)
         setOpenMenu('');
+
     };
     const toggleSearch = () => {
         setShowSearch(!showSearch);
     };
 
     return (
-        <AppBar position="sticky" sx={{ backgroundColor: '#440025' }}>
-            <Toolbar>
+        <AppBar position="sticky">
+            <Toolbar sx={{
+                backgroundColor: theme.navbar.backgroundColor
+            }}>
                 <img src={logo} alt="Shop Logo" className="logo" /> {/* Logo image */}
 
                 <Box display="flex" flexGrow={1} justifyContent="center">
@@ -44,6 +49,14 @@ const Navbar = () => {
                             key={item}
                             onClick={(e) => handleMenuOpen(e, item)}
                             className="menuButton"
+                            sx={{
+                                color: theme.navbarMenu.textColor,
+                                textTransform: 'none',
+                                fontSize: '16px',
+                                lineHeight: '1.5',
+                                margin: '0 10px',
+                                ':hover': { backgroundColor: theme.navbar.menuItemHoverColor },
+                              }}
                         >
                             {item}
                             {menuData[item] && menuData[item].options && Object.keys(menuData[item].options).length > 0 && (
@@ -53,7 +66,8 @@ const Navbar = () => {
                     ))}
                 </Box>
 
-                <IconButton color="inherit" onClick={toggleSearch}>
+                <IconButton color="inherit" onClick={toggleSearch} sx={{
+                                color: theme.navbarMenu.textColor}}>
                     <SearchIcon />
                 </IconButton>
 
@@ -62,18 +76,27 @@ const Navbar = () => {
                     <input className="input" placeholder="Search…" />
                 </div>
 
-                <IconButton color="inherit">
+                <IconButton color="inherit" sx={{
+                                color: theme.navbarMenu.textColor}}>
                     <ShoppingCartIcon />
                 </IconButton>
 
-                <IconButton edge="end" color="inherit" onClick={handleAccountMenu}>
+                <IconButton edge="end" color="inherit" onClick={handleAccountMenu} sx={{
+                                color: theme.navbarMenu.textColor}}>
                     <AccountCircle />
                 </IconButton>
 
-                <Menu anchorEl={accountMenuAnchor} open={accountMenuOpen} onClose={handleClose}>
-                    <MenuItem className="faceMenuItem">Orders</MenuItem>
+                <Menu anchorEl={accountMenuAnchor} open={accountMenuOpen} onClose={handleClose}
+                sx={{
+                    '& .MuiPaper-root': {
+                      backgroundColor: theme.cards.backgroundColor,
+                      borderColor: theme.cards.borderColor,
+                    },
+                  }}>
+                    <MenuItem className="faceMenuItem" >Orders</MenuItem>
                     <MenuItem className="faceMenuItem">Profile</MenuItem>
                     <MenuItem className="faceMenuItem">Change Password</MenuItem>
+                    <MenuItem className="faceMenuItem">Logout</MenuItem>
                 </Menu>
 
                 {/* Conditionally render DropdownMenu for the active menu */}

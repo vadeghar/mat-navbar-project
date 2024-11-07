@@ -3,7 +3,7 @@
 .searchWrapper,
 .faceMenuItem,
 .logo-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .title {
@@ -12,10 +12,6 @@
     font-weight: bold;
 }
 
-.menuButton {
-    font-size: 14px;
-    color: #fff !important;
-}
 
 .menuItem {
     font-size: 14px;
@@ -54,7 +50,7 @@
     padding: 8px 16px;
     box-sizing: border-box;
     transition: all 0.2s ease;
-    /* Smooth transition for hover effects */
+    font-size: small !important;
 }
 
 .faceMenuItem:hover {

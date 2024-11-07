@@ -1,13 +1,31 @@
 const NavbarTheme = {
-    primaryColor: '#FFC5C5', // Soft Pink
-    secondaryColor: '#F5F5DC', // Neutral Beige
-    accentColor: '#660066', // Deep Berry
+  primaryColor: '##faf2f5', // Soft Pink
+  secondaryColor: '#F5F5DC', // Neutral Beige
+  accentColor: '#660066', 
   
     navbar: {
-      backgroundColor: '#FFFFFF', // Crisp White
+      backgroundColor: '#f772a1', 
+      textColor: '#FFFFFF'
+    },
+
+    navbarMenu: {
+      textColor: '#261e21'
+    },
+
+    navbarMenuItemsBox: {
+      backgroundColor: '#282C35', // Crisp White
       menuBackgroundColor: '#F5F5DC', // Neutral Beige
       menuItemColor: '#333333', // Dark Gray
       menuItemHoverColor: '#660066', // Deep Berry
+      textColor: '#FFFFFF'
+    },
+
+    navbarMenuItem: {
+      backgroundColor: '#282C35', // Crisp White
+      menuBackgroundColor: '#F5F5DC', // Neutral Beige
+      menuItemColor: '#333333', // Dark Gray
+      menuItemHoverColor: '#660066', // Deep Berry
+      textColor: '#FFFFFF'
     },
   
     cards: {
