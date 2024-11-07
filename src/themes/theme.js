@@ -2,6 +2,18 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3f51b5',  // Replace with your primary color hex code
+      light: '#757de8',  // Optional: lighter shade of primary color
+      dark: '#002984',   // Optional: darker shade of primary color
+    },
+    secondary: {
+      main: '#f50057',  // Replace with your secondary color hex code
+      light: '#ff5983', // Optional: lighter shade of secondary color
+      dark: '#bb002f',  // Optional: darker shade of secondary color
+    },
+  },
   typography: {
     fontFamily: `'Montserrat', 'sans-serif'`,
     fontWeightRegular: 400,
