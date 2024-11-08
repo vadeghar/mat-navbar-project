@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import Bestsellers from './components/Bestsellers/Bestsellers';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import ProductCarousel from './components/demos/ProductCarousel';
 
 const theme = createTheme({
   typography: {
@@ -28,7 +29,7 @@ function App() {
         {/* <Carousels /> */}
       </Box>
       <Box sx={{ mt: 1.5, width: '95%', mx: 'auto', display: 'flex', justifyContent: 'center' }}>
-        <Bestsellers />
+        <ProductCarousel />
       </Box>
 
     </Box>

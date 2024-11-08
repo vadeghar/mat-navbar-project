@@ -1,6 +1,6 @@
 const sampleProducts = [
     {
-        title: 'Ikonic Curling Tong Emerald',
+        title: 'Ikonic Curling Tong Emerald1',
         images: ['https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/5ECPdS0A9z-957968_1.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/Csi4LIG_uT-957968_2.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/klAALFuX1N-957968_3.jpg'],
@@ -10,7 +10,7 @@ const sampleProducts = [
         regularPrice: '2372.00',
     },
     {
-        title: 'Precision Lip Liner',
+        title: 'Precision Lip Liner2',
         images: ['https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_base.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_2.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_3.jpg',
@@ -34,7 +34,7 @@ const sampleProducts = [
         regularPrice: '480.00',
     },
     {
-        title: 'Ikonic Curling Tong Emerald',
+        title: 'Ikonic Curling Tong Emerald3',
         images: ['https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/5ECPdS0A9z-957968_1.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/Csi4LIG_uT-957968_2.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/klAALFuX1N-957968_3.jpg'],
@@ -44,7 +44,7 @@ const sampleProducts = [
         regularPrice: '2372.00',
     },
     {
-        title: 'Precision Lip Liner',
+        title: 'Precision Lip Liner4',
         images: ['https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_base.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_2.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_3.jpg',
@@ -68,7 +68,7 @@ const sampleProducts = [
         regularPrice: '480.00',
     },
     {
-        title: 'Ikonic Curling Tong Emerald',
+        title: 'Ikonic Curling Tong Emerald5',
         images: ['https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/5ECPdS0A9z-957968_1.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/Csi4LIG_uT-957968_2.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/klAALFuX1N-957968_3.jpg'],
@@ -78,7 +78,7 @@ const sampleProducts = [
         regularPrice: '2372.00',
     },
     {
-        title: 'Precision Lip Liner',
+        title: 'Precision Lip Liner6',
         images: ['https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_base.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_2.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_3.jpg',
@@ -102,7 +102,7 @@ const sampleProducts = [
         regularPrice: '480.00',
     },
     {
-        title: 'Ikonic Curling Tong Emerald',
+        title: 'Ikonic Curling Tong Emerald7',
         images: ['https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/5ECPdS0A9z-957968_1.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/Csi4LIG_uT-957968_2.jpg',
             'https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/957968/klAALFuX1N-957968_3.jpg'],
@@ -112,7 +112,7 @@ const sampleProducts = [
         regularPrice: '2372.00',
     },
     {
-        title: 'Precision Lip Liner',
+        title: 'Precision Lip Liner8',
         images: ['https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_base.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_2.jpg',
             'https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/A23NARS45090915/A23NARS45090915_A23NARS45090915_3.jpg',

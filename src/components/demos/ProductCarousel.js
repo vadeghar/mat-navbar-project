@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Box, IconButton } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ProductBox from './ProductBox';
-import sampleProducts from '../testDataComp/BestsellersData';
+import ProductBox from '../Product/ProductBox';
+import sampleProducts from '../../testDataComp/BestsellersData';
 
 
 function ProductCarousel() {
