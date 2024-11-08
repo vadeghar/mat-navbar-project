@@ -10,7 +10,7 @@ import { styled } from '@mui/system';
 const ProductBoxContainer = styled(Box)(({ theme }) => ({
     borderRadius: '8px',
     padding: '0px',
-    width: '22%', // Adjusted width to fit 5 products in a line
+    width: '100%', // Adjusted width to fit 5 products in a line
     textAlign: 'center',
     position: 'relative',
     backgroundColor: '#ffffff',
