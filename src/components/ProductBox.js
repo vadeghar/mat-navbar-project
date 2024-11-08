@@ -10,7 +10,7 @@ import { styled } from '@mui/system';
 const ProductBoxContainer = styled(Box)(({ theme }) => ({
     borderRadius: '8px',
     padding: '0px',
-    width: '16%', // Adjusted width to fit 5 products in a line
+    width: '22%', // Adjusted width to fit 5 products in a line
     textAlign: 'center',
     position: 'relative',
     backgroundColor: '#ffffff',
@@ -18,7 +18,7 @@ const ProductBoxContainer = styled(Box)(({ theme }) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: '380px', // Adjusted height
+    height: '450px', // Adjusted height
     overflow: 'hidden',
     '&:hover': {
         transform: 'scale(1.03)',

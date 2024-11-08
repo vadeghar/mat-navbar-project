@@ -5,6 +5,8 @@ import { Box } from '@mui/material';
 import Bestsellers from './components/Bestsellers';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import ImageCarousel from './components/FilmReelCarousel';
+import ProductCarousel from './components/ProductCarousel';
 
 const theme = createTheme({
   typography: {
@@ -26,7 +28,7 @@ function App() {
         <Navbar />
       </div>
       <Box sx={{ mt: 1.5}}> {/* `mt` is shorthand for `marginTop` in Material UI */}
-        <Carousels />
+        {/* <Carousels /> */}
       </Box>
       <Box sx={{ mt: 1.5, width: '95%', mx: 'auto', display: 'flex', justifyContent: 'center' }}>
         <Bestsellers />
