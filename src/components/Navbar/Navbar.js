@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Button, Menu, MenuItem, Box } from '@mui/material';
 import { Search as SearchIcon, ShoppingCart as ShoppingCartIcon, AccountCircle, KeyboardArrowUp, KeyboardArrowDown } from '@mui/icons-material';
-import './Navbar.css'; // Import the CSS file
-import DropdownMenu from './DropdownMenu';
-import logo from '../imgs/logo.png';
-import menuData from './MenuData';
-import theme from '../themes/NavbarTheme';
+import '../Navbar/Navbar.css'; // Import the CSS file
+import DropdownMenu from '../DropdownMenu';
+import logo from '../../imgs/logo.png';
+import menuData from '../../testDataComp/NavbarData';
+import theme from '../../themes/NavbarTheme';
 
 const Navbar = () => {
     const [accountMenuAnchor, setAccountMenuAnchor] = useState(null);

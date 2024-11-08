@@ -1,12 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar'; // assuming you separated Navbar as a component
-import Carousels from './components/Carousels';
+import Navbar from './components/Navbar/Navbar'; // assuming you separated Navbar as a component
 import { Box } from '@mui/material';
-import Bestsellers from './components/Bestsellers';
+import Bestsellers from './components/Bestsellers/Bestsellers';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import ImageCarousel from './components/FilmReelCarousel';
-import ProductCarousel from './components/ProductCarousel';
 
 const theme = createTheme({
   typography: {
